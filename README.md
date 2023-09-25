@@ -18,7 +18,7 @@ make migrate
 Для взаимодействия с БД, используйте пользователя **ecom-service** (в миграциях)
 
 ```postgres
-CREATE DATABASE psp;
+CREATE DATABASE ecom-service;
 
 CREATE USER ecom-service WITH ENCRYPTED PASSWORD 'qazwsx';
 GRANT ALL PRIVILEGES ON DATABASE ecom-service TO ecom-service;
