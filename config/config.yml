@@ -1,0 +1,42 @@
+client:
+  timeout:
+    read: 60
+    connect: 10
+server:
+  ext_host: some.domain.com
+  ext_port: 80
+  host: 0.0.0.0
+  port: 8080
+  timeout:
+    server: 180
+    read: 180
+    write: 180
+    idle: 5
+logrus:
+  level: debug
+alfabank:
+  aft:
+    url: http://127.0.0.1:8000
+  ecom:
+    url: https://web.rbsuat.com/ab
+testbank:
+  sbp:
+    url: http://158.160.1.43:8004
+vbrr:
+  ecom:
+    url: https://web.rbsuat.com/vbrr
+gpb:
+  ecom:
+    url: https://lt.pga.gazprombank.ru
+    payapi: /api/v4
+    merchantapi: /merchantapi
+  sbp:
+    qrttl: 30
+    url: https://testapi.sbp.gazprombank.ru:9443
+    privatekey: /path/to/privatekey.pem
+databases:
+  migration_source: file://migrations
+  default:
+    dsn: dbname=ecom-service user=ecom-service password=qazwsx host=127.0.0.1 pool_max_conns=10
+cardstore:
+  url: http://127.0.0.1:8090

@@ -1,0 +1,1 @@
+create table public.cardmasks (id serial not null primary key, card_id integer not null, mask varchar(12) not null, token varchar(100) not null, holder varchar(50), exp_date timestamp, constraint cardmasks_card_id_uiq unique(card_id), constraint cardmasks_token_uiq unique(token));

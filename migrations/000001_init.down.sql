@@ -1,0 +1,9 @@
+DROP TABLE transactions;
+DROP TABLE rates;
+DROP TABLE routes;
+DROP TABLE routers;
+DROP TABLE accounts;
+DROP TABLE profiles;
+DROP TABLE currencies;
+DROP TABLE instruments;
+DROP TABLE channels;
