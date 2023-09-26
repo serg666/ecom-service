@@ -2,6 +2,12 @@ client:
   timeout:
     read: 60
     connect: 10
+  transport:
+    forceattempthttp2: true
+    maxidleconns: 100
+    idleconntimeout: 90
+    tlshandshaketimeout: 10
+    expectcontinuetimeout: 1
 server:
   ext_host: some.domain.com
   ext_port: 80
@@ -37,6 +43,6 @@ gpb:
 databases:
   migration_source: file://migrations
   default:
-    dsn: dbname=ecom-service user=ecom-service password=qazwsx host=127.0.0.1 pool_max_conns=10
+    dsn: dbname=ecom_service user=ecom_service password=qazwsx host=127.0.0.1 pool_max_conns=10 sslmode=disable
 cardstore:
   url: http://127.0.0.1:8090

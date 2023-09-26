@@ -37,6 +37,13 @@ type Config struct {
 		TLS struct {
 			InsecureSkipVerify bool `yaml:"insecureskipverify"`
 		} `yaml:"tls"`
+		Transport struct {
+			ForceAttemptHTTP2 bool `yaml:"forceattempthttp2"`
+			MaxIdleConns int `yaml:"maxidleconns"`
+			IdleConnTimeout time.Duration `yaml:"idleconntimeout"`
+			TLSHandshakeTimeout time.Duration `yaml:"tlshandshaketimeout"`
+			ExpectContinueTimeout time.Duration `yaml:"expectcontinuetimeout"`
+		} `yaml:"transport"`
 	} `yaml:"client"`
 	Server struct {
 		// Host is the external machine IP Address to access the HTTP Server
@@ -143,10 +150,11 @@ func (cfg *Config) HttpClient() *http.Client {
 			DialContext: (&net.Dialer{
 				Timeout: cfg.Client.Timeout.Connect * time.Second,
 			}).DialContext,
-			ForceAttemptHTTP2:     true,
-			IdleConnTimeout:       90 * time.Second,
-			TLSHandshakeTimeout:   10 * time.Second,
-			ExpectContinueTimeout: 1 * time.Second,
+			ForceAttemptHTTP2:     cfg.Client.Transport.ForceAttemptHTTP2,
+			MaxIdleConns:          cfg.Client.Transport.MaxIdleConns,
+			IdleConnTimeout:       cfg.Client.Transport.IdleConnTimeout * time.Second,
+			TLSHandshakeTimeout:   cfg.Client.Transport.TLSHandshakeTimeout * time.Second,
+			ExpectContinueTimeout: cfg.Client.Transport.ExpectContinueTimeout * time.Second,
 			TLSClientConfig: &tls.Config{
 				InsecureSkipVerify: cfg.Client.TLS.InsecureSkipVerify,
 			},
