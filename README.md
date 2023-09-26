@@ -15,13 +15,13 @@ make migrate
 
 Более подробная информация по установке [тут](https://github.com/golang-migrate/migrate/tree/master/cmd/migrate#installation)
 
-Для взаимодействия с БД, используйте пользователя **ecom-service** (в миграциях)
+Для взаимодействия с БД, используйте пользователя **ecom_service** (в миграциях)
 
 ```postgres
-CREATE DATABASE ecom-service;
+CREATE DATABASE ecom_service;
 
-CREATE USER ecom-service WITH ENCRYPTED PASSWORD 'qazwsx';
-GRANT ALL PRIVILEGES ON DATABASE ecom-service TO ecom-service;
+CREATE USER ecom_service WITH ENCRYPTED PASSWORD 'qazwsx';
+GRANT ALL PRIVILEGES ON DATABASE ecom_service TO ecom_service;
 ```
 
 ## Генерация документции swagger

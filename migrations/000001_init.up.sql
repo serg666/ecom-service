@@ -21,7 +21,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: accounts; Type: TABLE; Schema: public; Owner: ecom-service
+-- Name: accounts; Type: TABLE; Schema: public; Owner: ecom_service
 --
 
 CREATE TABLE public.accounts (
@@ -41,10 +41,10 @@ CREATE TABLE public.accounts (
 );
 
 
-ALTER TABLE public.accounts OWNER TO ecom-service;
+ALTER TABLE public.accounts OWNER TO ecom_service;
 
 --
--- Name: accounts_id_seq; Type: SEQUENCE; Schema: public; Owner: ecom-service
+-- Name: accounts_id_seq; Type: SEQUENCE; Schema: public; Owner: ecom_service
 --
 
 CREATE SEQUENCE public.accounts_id_seq
@@ -56,17 +56,17 @@ CREATE SEQUENCE public.accounts_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.accounts_id_seq OWNER TO ecom-service;
+ALTER TABLE public.accounts_id_seq OWNER TO ecom_service;
 
 --
--- Name: accounts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: ecom-service
+-- Name: accounts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: ecom_service
 --
 
 ALTER SEQUENCE public.accounts_id_seq OWNED BY public.accounts.id;
 
 
 --
--- Name: channels; Type: TABLE; Schema: public; Owner: ecom-service
+-- Name: channels; Type: TABLE; Schema: public; Owner: ecom_service
 --
 
 CREATE TABLE public.channels (
@@ -76,10 +76,10 @@ CREATE TABLE public.channels (
 );
 
 
-ALTER TABLE public.channels OWNER TO ecom-service;
+ALTER TABLE public.channels OWNER TO ecom_service;
 
 --
--- Name: currencies; Type: TABLE; Schema: public; Owner: ecom-service
+-- Name: currencies; Type: TABLE; Schema: public; Owner: ecom_service
 --
 
 CREATE TABLE public.currencies (
@@ -91,10 +91,10 @@ CREATE TABLE public.currencies (
 );
 
 
-ALTER TABLE public.currencies OWNER TO ecom-service;
+ALTER TABLE public.currencies OWNER TO ecom_service;
 
 --
--- Name: currencies_id_seq; Type: SEQUENCE; Schema: public; Owner: ecom-service
+-- Name: currencies_id_seq; Type: SEQUENCE; Schema: public; Owner: ecom_service
 --
 
 CREATE SEQUENCE public.currencies_id_seq
@@ -106,17 +106,17 @@ CREATE SEQUENCE public.currencies_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.currencies_id_seq OWNER TO ecom-service;
+ALTER TABLE public.currencies_id_seq OWNER TO ecom_service;
 
 --
--- Name: currencies_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: ecom-service
+-- Name: currencies_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: ecom_service
 --
 
 ALTER SEQUENCE public.currencies_id_seq OWNED BY public.currencies.id;
 
 
 --
--- Name: instruments; Type: TABLE; Schema: public; Owner: ecom-service
+-- Name: instruments; Type: TABLE; Schema: public; Owner: ecom_service
 --
 
 CREATE TABLE public.instruments (
@@ -125,10 +125,10 @@ CREATE TABLE public.instruments (
 );
 
 
-ALTER TABLE public.instruments OWNER TO ecom-service;
+ALTER TABLE public.instruments OWNER TO ecom_service;
 
 --
--- Name: profiles; Type: TABLE; Schema: public; Owner: ecom-service
+-- Name: profiles; Type: TABLE; Schema: public; Owner: ecom_service
 --
 
 CREATE TABLE public.profiles (
@@ -139,10 +139,10 @@ CREATE TABLE public.profiles (
 );
 
 
-ALTER TABLE public.profiles OWNER TO ecom-service;
+ALTER TABLE public.profiles OWNER TO ecom_service;
 
 --
--- Name: profiles_id_seq; Type: SEQUENCE; Schema: public; Owner: ecom-service
+-- Name: profiles_id_seq; Type: SEQUENCE; Schema: public; Owner: ecom_service
 --
 
 CREATE SEQUENCE public.profiles_id_seq
@@ -154,17 +154,17 @@ CREATE SEQUENCE public.profiles_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.profiles_id_seq OWNER TO ecom-service;
+ALTER TABLE public.profiles_id_seq OWNER TO ecom_service;
 
 --
--- Name: profiles_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: ecom-service
+-- Name: profiles_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: ecom_service
 --
 
 ALTER SEQUENCE public.profiles_id_seq OWNED BY public.profiles.id;
 
 
 --
--- Name: rates; Type: TABLE; Schema: public; Owner: ecom-service
+-- Name: rates; Type: TABLE; Schema: public; Owner: ecom_service
 --
 
 CREATE TABLE public.rates (
@@ -176,10 +176,10 @@ CREATE TABLE public.rates (
 );
 
 
-ALTER TABLE public.rates OWNER TO ecom-service;
+ALTER TABLE public.rates OWNER TO ecom_service;
 
 --
--- Name: rates_id_seq; Type: SEQUENCE; Schema: public; Owner: ecom-service
+-- Name: rates_id_seq; Type: SEQUENCE; Schema: public; Owner: ecom_service
 --
 
 CREATE SEQUENCE public.rates_id_seq
@@ -191,17 +191,17 @@ CREATE SEQUENCE public.rates_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.rates_id_seq OWNER TO ecom-service;
+ALTER TABLE public.rates_id_seq OWNER TO ecom_service;
 
 --
--- Name: rates_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: ecom-service
+-- Name: rates_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: ecom_service
 --
 
 ALTER SEQUENCE public.rates_id_seq OWNED BY public.rates.id;
 
 
 --
--- Name: routers; Type: TABLE; Schema: public; Owner: ecom-service
+-- Name: routers; Type: TABLE; Schema: public; Owner: ecom_service
 --
 
 CREATE TABLE public.routers (
@@ -210,10 +210,10 @@ CREATE TABLE public.routers (
 );
 
 
-ALTER TABLE public.routers OWNER TO ecom-service;
+ALTER TABLE public.routers OWNER TO ecom_service;
 
 --
--- Name: routes; Type: TABLE; Schema: public; Owner: ecom-service
+-- Name: routes; Type: TABLE; Schema: public; Owner: ecom_service
 --
 
 CREATE TABLE public.routes (
@@ -226,10 +226,10 @@ CREATE TABLE public.routes (
 );
 
 
-ALTER TABLE public.routes OWNER TO ecom-service;
+ALTER TABLE public.routes OWNER TO ecom_service;
 
 --
--- Name: routes_id_seq; Type: SEQUENCE; Schema: public; Owner: ecom-service
+-- Name: routes_id_seq; Type: SEQUENCE; Schema: public; Owner: ecom_service
 --
 
 CREATE SEQUENCE public.routes_id_seq
@@ -241,17 +241,17 @@ CREATE SEQUENCE public.routes_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.routes_id_seq OWNER TO ecom-service;
+ALTER TABLE public.routes_id_seq OWNER TO ecom_service;
 
 --
--- Name: routes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: ecom-service
+-- Name: routes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: ecom_service
 --
 
 ALTER SEQUENCE public.routes_id_seq OWNED BY public.routes.id;
 
 
 --
--- Name: transactions; Type: TABLE; Schema: public; Owner: ecom-service
+-- Name: transactions; Type: TABLE; Schema: public; Owner: ecom_service
 --
 
 CREATE TABLE public.transactions (
@@ -283,10 +283,10 @@ CREATE TABLE public.transactions (
 );
 
 
-ALTER TABLE public.transactions OWNER TO ecom-service;
+ALTER TABLE public.transactions OWNER TO ecom_service;
 
 --
--- Name: transactions_id_seq; Type: SEQUENCE; Schema: public; Owner: ecom-service
+-- Name: transactions_id_seq; Type: SEQUENCE; Schema: public; Owner: ecom_service
 --
 
 CREATE SEQUENCE public.transactions_id_seq
@@ -298,59 +298,59 @@ CREATE SEQUENCE public.transactions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.transactions_id_seq OWNER TO ecom-service;
+ALTER TABLE public.transactions_id_seq OWNER TO ecom_service;
 
 --
--- Name: transactions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: ecom-service
+-- Name: transactions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: ecom_service
 --
 
 ALTER SEQUENCE public.transactions_id_seq OWNED BY public.transactions.id;
 
 
 --
--- Name: accounts id; Type: DEFAULT; Schema: public; Owner: ecom-service
+-- Name: accounts id; Type: DEFAULT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.accounts ALTER COLUMN id SET DEFAULT nextval('public.accounts_id_seq'::regclass);
 
 
 --
--- Name: currencies id; Type: DEFAULT; Schema: public; Owner: ecom-service
+-- Name: currencies id; Type: DEFAULT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.currencies ALTER COLUMN id SET DEFAULT nextval('public.currencies_id_seq'::regclass);
 
 
 --
--- Name: profiles id; Type: DEFAULT; Schema: public; Owner: ecom-service
+-- Name: profiles id; Type: DEFAULT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.profiles ALTER COLUMN id SET DEFAULT nextval('public.profiles_id_seq'::regclass);
 
 
 --
--- Name: rates id; Type: DEFAULT; Schema: public; Owner: ecom-service
+-- Name: rates id; Type: DEFAULT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.rates ALTER COLUMN id SET DEFAULT nextval('public.rates_id_seq'::regclass);
 
 
 --
--- Name: routes id; Type: DEFAULT; Schema: public; Owner: ecom-service
+-- Name: routes id; Type: DEFAULT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.routes ALTER COLUMN id SET DEFAULT nextval('public.routes_id_seq'::regclass);
 
 
 --
--- Name: transactions id; Type: DEFAULT; Schema: public; Owner: ecom-service
+-- Name: transactions id; Type: DEFAULT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.transactions ALTER COLUMN id SET DEFAULT nextval('public.transactions_id_seq'::regclass);
 
 
 --
--- Name: accounts accounts_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: accounts accounts_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.accounts
@@ -358,7 +358,7 @@ ALTER TABLE ONLY public.accounts
 
 
 --
--- Name: channels channel_key_uix; Type: CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: channels channel_key_uix; Type: CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.channels
@@ -366,7 +366,7 @@ ALTER TABLE ONLY public.channels
 
 
 --
--- Name: channels channels_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: channels channels_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.channels
@@ -374,7 +374,7 @@ ALTER TABLE ONLY public.channels
 
 
 --
--- Name: currencies currencies_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: currencies currencies_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.currencies
@@ -382,7 +382,7 @@ ALTER TABLE ONLY public.currencies
 
 
 --
--- Name: currencies currency_numeric_code_uix; Type: CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: currencies currency_numeric_code_uix; Type: CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.currencies
@@ -390,7 +390,7 @@ ALTER TABLE ONLY public.currencies
 
 
 --
--- Name: instruments instruments_key_key; Type: CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: instruments instruments_key_key; Type: CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.instruments
@@ -398,7 +398,7 @@ ALTER TABLE ONLY public.instruments
 
 
 --
--- Name: instruments instruments_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: instruments instruments_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.instruments
@@ -406,7 +406,7 @@ ALTER TABLE ONLY public.instruments
 
 
 --
--- Name: profiles profiles_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: profiles profiles_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.profiles
@@ -414,7 +414,7 @@ ALTER TABLE ONLY public.profiles
 
 
 --
--- Name: rates rates_date_currency_id_key; Type: CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: rates rates_date_currency_id_key; Type: CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.rates
@@ -422,7 +422,7 @@ ALTER TABLE ONLY public.rates
 
 
 --
--- Name: rates rates_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: rates rates_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.rates
@@ -430,7 +430,7 @@ ALTER TABLE ONLY public.rates
 
 
 --
--- Name: routers routers_key_key; Type: CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: routers routers_key_key; Type: CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.routers
@@ -438,7 +438,7 @@ ALTER TABLE ONLY public.routers
 
 
 --
--- Name: routers routers_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: routers routers_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.routers
@@ -446,7 +446,7 @@ ALTER TABLE ONLY public.routers
 
 
 --
--- Name: routes routes_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: routes routes_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.routes
@@ -454,7 +454,7 @@ ALTER TABLE ONLY public.routes
 
 
 --
--- Name: routes routes_profile_id_instrument_id_key; Type: CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: routes routes_profile_id_instrument_id_key; Type: CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.routes
@@ -462,7 +462,7 @@ ALTER TABLE ONLY public.routes
 
 
 --
--- Name: transactions transactions_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: transactions transactions_pkey; Type: CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.transactions
@@ -470,21 +470,21 @@ ALTER TABLE ONLY public.transactions
 
 
 --
--- Name: ref_status_idx; Type: INDEX; Schema: public; Owner: ecom-service
+-- Name: ref_status_idx; Type: INDEX; Schema: public; Owner: ecom_service
 --
 
 CREATE INDEX ref_status_idx ON public.transactions USING btree (reference_id, status);
 
 
 --
--- Name: type_id_idx; Type: INDEX; Schema: public; Owner: ecom-service
+-- Name: type_id_idx; Type: INDEX; Schema: public; Owner: ecom_service
 --
 
 CREATE INDEX type_id_idx ON public.channels USING btree (type_id);
 
 
 --
--- Name: accounts accounts_channel_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: accounts accounts_channel_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.accounts
@@ -492,7 +492,7 @@ ALTER TABLE ONLY public.accounts
 
 
 --
--- Name: accounts accounts_currency_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: accounts accounts_currency_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.accounts
@@ -500,7 +500,7 @@ ALTER TABLE ONLY public.accounts
 
 
 --
--- Name: profiles profiles_currency_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: profiles profiles_currency_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.profiles
@@ -508,7 +508,7 @@ ALTER TABLE ONLY public.profiles
 
 
 --
--- Name: rates rates_currency_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: rates rates_currency_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.rates
@@ -516,7 +516,7 @@ ALTER TABLE ONLY public.rates
 
 
 --
--- Name: routes routes_account_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: routes routes_account_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.routes
@@ -524,7 +524,7 @@ ALTER TABLE ONLY public.routes
 
 
 --
--- Name: routes routes_instrument_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: routes routes_instrument_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.routes
@@ -532,7 +532,7 @@ ALTER TABLE ONLY public.routes
 
 
 --
--- Name: routes routes_router_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: routes routes_router_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.routes
@@ -540,7 +540,7 @@ ALTER TABLE ONLY public.routes
 
 
 --
--- Name: transactions transactions_account_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: transactions transactions_account_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.transactions
@@ -548,7 +548,7 @@ ALTER TABLE ONLY public.transactions
 
 
 --
--- Name: transactions transactions_currency_converted_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: transactions transactions_currency_converted_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.transactions
@@ -556,7 +556,7 @@ ALTER TABLE ONLY public.transactions
 
 
 --
--- Name: transactions transactions_currency_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: transactions transactions_currency_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.transactions
@@ -564,7 +564,7 @@ ALTER TABLE ONLY public.transactions
 
 
 --
--- Name: transactions transactions_instrument_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: transactions transactions_instrument_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.transactions
@@ -572,7 +572,7 @@ ALTER TABLE ONLY public.transactions
 
 
 --
--- Name: transactions transactions_profile_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: transactions transactions_profile_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.transactions
@@ -580,7 +580,7 @@ ALTER TABLE ONLY public.transactions
 
 
 --
--- Name: transactions transactions_reference_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom-service
+-- Name: transactions transactions_reference_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: ecom_service
 --
 
 ALTER TABLE ONLY public.transactions
