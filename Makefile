@@ -1,5 +1,5 @@
 MIGRATIONS_SOURCE = "file://migrations"
-DATABASE_DSN = "postgres://ecom-service:qazwsx@127.0.0.1/ecom-service?sslmode=disable"
+DATABASE_DSN = "postgres://ecom_service:qazwsx@127.0.0.1/ecom_service?sslmode=disable"
 
 run:
 	./build/bin/gateway -config ./config/config.yml
